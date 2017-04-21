@@ -1,0 +1,11 @@
+NODES
+  /bebop/
+    bebop_driver (bebop_driver/bebop_driver_node)
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+  /face_detect/
+    face_detect_server (face_detect/face_detect_server.py)
+  /bebop_driver/
+    bebop_key_teleop (bebop_driver/bebop_key_teleop.py)
+    collision_avoid (bebop_driver/collision_avoid.py)
+    obstacle_detect (bebop_driver/obstacle_detect.py)
+

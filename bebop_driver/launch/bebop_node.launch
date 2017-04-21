@@ -14,21 +14,21 @@
         <include file="$(find bebop_description)/launch/description.launch" />
     </group>
 
+
+    <group ns="bebop_driver">
+        <node pkg="bebop_driver" name="obstacleDetect" type="obstacleDetect.py" output="screen" />
+    </group>
+
     <group ns="face_detect">
-        <node pkg="face_detect" name="face_detect_server" type="face_detect_server.py"/>
+        <node pkg="face_detect" name="facedetectServer" type="facedetectServer.py" output="screen" />
     </group>
 
     <group ns="bebop_driver">
-        <node pkg="bebop_driver" name="obstacle_detect" type="obstacle_detect.py" output="screen" launch-prefix="xterm -e"/>
-    </group>
-
-
-    <group ns="bebop_driver">
-        <node pkg="bebop_driver" name="collision_avoid" type="collision_avoid.py" output="screen" launch-prefix="xterm -e"/>
+        <node pkg="bebop_driver" name="collisionAvoid" type="collisionAvoid.py" output="screen" />
     </group>
 
     <group ns="bebop_driver">
-        <node pkg="bebop_driver" name="bebop_key_teleop" type="bebop_key_teleop.py" output="screen" launch-prefix="xterm -e"/>
+        <node pkg="bebop_driver" name="bebopKeyTeleop" type="bebopKeyTeleop.py" output="screen" launch-prefix="xterm -e"/>
     </group>
 
 
